@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
+        <div class="background-animation"></div>
         <div class="login-box">
             <img src="download.jpeg" class="avatar" alt="Avatar">
             <h1>Login Here</h1>
-            <form id="loginForm"></form>
+            <form id="loginForm" onsubmit="login(event)">
                 <p>Email</p>
-                <input type="text" id="email" placeholder="Enter Email" required>
+                <input type="text" id="email" name="email" placeholder="Enter Email" required>
                 <p>Password</p>
-                <input type="password" id="password" placeholder="Enter Password" required>
-                <button type="button" onclick="login()">Login</button>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                <button type="submit">Login</button>
+                <div id="loginMessage"></div>
             </form>
         </div>
     </div>
