@@ -13,11 +13,13 @@
             <img src="download.jpeg" class="avatar" alt="Avatar">
             <h1>Login Here</h1>
             <form id="loginForm" onsubmit="login(event)">
-                <p>Email</p>
                 <input type="text" id="email" name="email" placeholder="Enter Email" required>
-                <p>Password</p>
                 <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                <button type="submit">Login</button>
+                <div class="links-container">
+                    <p class="small-font">New User?</p>
+                    <p class="small-font">Forgot Password?</p>
+                </div>
+                <button type="submit"id="loginButton">Login</button>
                 <div id="loginMessage"></div>
             </form>
         </div>
