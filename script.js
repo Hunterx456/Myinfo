@@ -23,9 +23,8 @@ function login(event) {
 function navigateToNewUserPage() {
   window.location.href = 'newuserlogin.html';
 }
-document.getElementById('newuser').addEventListener('click', navigateToNewUserPage);
-function navigateToExistinguserpage() {
-  window.location.href = 'index.html';
+function navigateToforgotpage() {
+  window.location.href ='forgot.html'
 }
-
-document.getElementById('Existinguser').addEventListener('click', navigateToExistinguserpage);
+document.getElementById('newuser').addEventListener('click', navigateToNewUserPage);
+document.getElementById('forgot').addEventListener('click', navigateToforgotpage);
