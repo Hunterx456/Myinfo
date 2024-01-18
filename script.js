@@ -20,3 +20,12 @@ function login(event) {
     loginButton.style.top = `${randomY}px`;
   }
 }
+function navigateToNewUserPage() {
+  window.location.href = 'newuserlogin.html';
+}
+document.getElementById('newuser').addEventListener('click', navigateToNewUserPage);
+function navigateToExistinguserpage() {
+  window.location.href = 'index.html';
+}
+
+document.getElementById('Existinguser').addEventListener('click', navigateToExistinguserpage);

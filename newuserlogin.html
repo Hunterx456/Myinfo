@@ -10,20 +10,30 @@
     <div class="container">
         <div class="background-animation"></div>
         <div class="login-box">
-            <img src="download.jpeg" class="avatar" alt="Avatar">
+            <img src="new user.png" class="avatar" alt="Avatar">
             <h1>Login Here</h1>
             <form id="loginForm" onsubmit="login(event)">
+                <input type="text" id="fname" name="firstname" placeholder="Enter Name" required>
                 <input type="text" id="email" name="email" placeholder="Enter Email" required>
                 <input type="password" id="password" name="password" placeholder="Enter Password" required>
                 <div class="links-container">
-                    <p class="small-font" id="newuser">New User?</p>
-                    <p class="small-font">Forgot Password?</p>
+                    <p class="small-font" id="Existinguser">Existing user?</p>
                 </div>
-                <button type="submit"id="loginButton">Login</button>
+                <button type="submit" id="loginButton">Login</button>
                 <div id="loginMessage"></div>
             </form>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function login(event) {
+            event.preventDefault();
+        }
+
+        function navigateToExistingUserPage() {
+            window.location.href = 'index.html'; 
+        }
+
+        document.getElementById('Existinguser').addEventListener('click', navigateToExistingUserPage);
+    </script>
 </body>
 </html>
